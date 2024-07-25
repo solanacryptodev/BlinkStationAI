@@ -8,7 +8,7 @@ import {
     getNftMint,
     validatedQueryParams
 } from '@/lib/chat/blinks/actions';
-import { assets, ATLAS } from '@/app/api/actions/buy/const';
+import { AssetMetadata, assets, ATLAS } from '@/app/api/actions/buy/const';
 
 export const dynamic = 'force-dynamic'
 
@@ -17,10 +17,10 @@ export const GET = async (req: Request) => {
         const requestURL = new URL(req.url);
         const { playerPubKey } = validatedQueryParams(requestURL);
         // Extract the asset parameter from the pathname
-        const assetParam = requestURL.searchParams.get("asset");
+        const getAssetParam = requestURL.searchParams.get("asset");
 
         // Find the matching asset
-        const matchingAsset = assets.find(asset => asset.param === assetParam);
+        const matchingAsset: AssetMetadata = assets.find(asset => asset.param === getAssetParam)!;
 
         const baseHref = new URL(`/api/buy?asset=${matchingAsset?.param}`, requestURL.origin).toString();
 
@@ -39,7 +39,7 @@ export const GET = async (req: Request) => {
 
         const payload: ActionGetResponse = {
             title: `Star Atlas: ${matchingAsset?.name} Market`,
-            icon: "https://staratlas.com/favicon.ico",
+            icon: `${matchingAsset?.image!}`,
             description: `Purchase an NFT from the Galactic Marketplace`,
             label: "FindOrdersForAsset",
             links: {
