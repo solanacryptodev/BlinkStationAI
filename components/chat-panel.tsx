@@ -42,18 +42,18 @@ export function ChatPanel({
     },
     {
       heading: 'How many fleets',
-      subheading: 'are there in this sector?',
-      message: 'How many fleets are there in this sector?'
+      subheading: 'are there in sector MRZ-5?',
+      message: 'How many fleets are there in sector MRZ-5?'
     },
     {
-      heading: 'Tell me about',
-      subheading: 'this planet.',
-      message: `Tell me about this planet.`
+      heading: 'Tell me about the starbase',
+      subheading: 'at sector MRZ-3.',
+      message: `Tell me about the starbase at sector MRZ-3.`
     },
     {
-      heading: 'Tell me about',
-      subheading: `this fleet.`,
-      message: `Tell me about this fleet.`
+      heading: 'How many hostile sectors',
+      subheading: `and allied sectors are there?`,
+      message: `How many hostile sectors and allied sectors are there?`
     }
   ]
 

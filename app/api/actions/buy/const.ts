@@ -17,20 +17,20 @@ export const assets: AssetMetadata[] = [
     {
         name: 'Pearce X5',
         param: 'pearcex5',
-        image: '',
-        mint: ''
+        image: 'https://shdw-drive.genesysgo.net/6CKtcXBouZ4mGAt4NzNcdW29rZCBMx3CTZtBn3zGmz6z/pearcex5.png',
+        mint: '267DbhCypYzvTqv72ZG5UKHeFu56qXFsuoz3rw832eC5'
     },
     {
         name: 'Pearce R8',
         param: 'pearcer8',
-        image: '',
-        mint: ''
+        image: 'https://shdw-drive.genesysgo.net/6CKtcXBouZ4mGAt4NzNcdW29rZCBMx3CTZtBn3zGmz6z/pearcer8.png',
+        mint: '2bCgKTo11QayWBy6QryHZMqZL2ZgWd5LEAZKiTGQi4g7'
     },
     {
         name: 'Calico ATS Enforcer',
         param: 'calicoatsenforcer',
-        image: '',
-        mint: ''
+        image: 'https://shdw-drive.genesysgo.net/6CKtcXBouZ4mGAt4NzNcdW29rZCBMx3CTZtBn3zGmz6z/calicoatsenforcer.png',
+        mint: '2XYd22LSFGxN7kWgoEeaXVZqgrsPeQLHLEgNhnS12Mny'
     },
     {
         name: 'Calico Maxhog',
