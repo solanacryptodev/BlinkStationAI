@@ -18,6 +18,11 @@ export function getNftMint(assetQuery: string): PublicKey | null {
     return mint ? new PublicKey(mint) : null;
 }
 
+export function parseCombinedParams(param: string): { asset: string, orderId: string, price: string, quantity: string } {
+    const [asset, orderId, price, quantity] = param.split('|');
+    return { asset, orderId, price, quantity };
+}
+
 export function validatedQueryParams(requestUrl: URL) {
     let playerPubKey = new PublicKey('5YMeDBj2C41Fr6paRWUdKc7dXua1DTbhhQwkaKuDdzty');
     let nftName: string = '';

@@ -1,12 +1,15 @@
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
-
 import '@/app/globals.css'
+import { Dosis } from 'next/font/google'
 import { cn } from '@/lib/utils'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
 import { Providers } from '@/components/providers'
 import { Header } from '@/components/header'
 import { Toaster } from '@/components/ui/sonner'
+
+const dosis = Dosis({
+  weight: '400',
+  display: 'swap',
+})
 
 export const metadata = {
   metadataBase: process.env.VERCEL_URL
@@ -40,9 +43,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'font-sans antialiased',
-          GeistSans.variable,
-          GeistMono.variable
+          'antialiased',
+          dosis.className
         )}
       >
         <Toaster position="top-center" />

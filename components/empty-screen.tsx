@@ -8,12 +8,12 @@ export function EmptyScreen() {
   return (
     <div className="mx-auto max-w-2xl px-4">
       <div className="flex flex-col gap-2 rounded-lg border bg-background p-8">
-        <h1 className="text-lg font-semibold">
-          Welcome to Next.js AI Chatbot!
+        <h1 className="text-2xl font-semibold">
+          Welcome to Blink Station 10!
         </h1>
-        <p className="leading-normal text-muted-foreground">
-          This is an open source AI chatbot app template built with{' '}
-          <ExternalLink href="https://nextjs.org">Next.js</ExternalLink>, the{' '}
+        <p className="leading-normal text-muted-foreground text-lg">
+          Atlasson will be your trusty AI companion as you explore the{' '}
+          <ExternalLink href="https://staratlas.com">Star Atlas</ExternalLink>, Universe.{' '}
           <ExternalLink href="https://sdk.vercel.ai">
             Vercel AI SDK
           </ExternalLink>
@@ -23,14 +23,13 @@ export function EmptyScreen() {
           </ExternalLink>
           .
         </p>
-        <p className="leading-normal text-muted-foreground">
-          It uses{' '}
-          <ExternalLink href="https://vercel.com/blog/ai-sdk-3-generative-ui">
-            React Server Components
+        <p className="leading-normal text-muted-foreground text-lg">
+          Atlasson uses{' '}
+          <ExternalLink href="https://build.staratlas.com">
+            real-time data
           </ExternalLink>{' '}
-          to combine text with generative UI as output of the LLM. The UI state
-          is synced through the SDK so the model is aware of your interactions
-          as they happen.
+          from the Solana blockchain to tell you what is happening across Galia. Battles being fought, Starbases being built,
+          resources being mined and so much more.
         </p>
       </div>
     </div>
