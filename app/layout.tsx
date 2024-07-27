@@ -9,6 +9,7 @@ import { Toaster } from '@/components/ui/sonner'
 const dosis = Dosis({
   weight: '400',
   display: 'swap',
+  subsets: ['latin'],
 })
 
 export const metadata = {
