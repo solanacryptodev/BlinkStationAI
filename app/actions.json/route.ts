@@ -8,6 +8,12 @@ export const GET = async () => {
                 pathPattern: "/blink",
                 apiPath: "/api/actions/buy",
             },
+            // fallback path
+            // TODO: fetch quantity from on-chain. Currently hardcoded to 618.
+            {
+                pathPattern: "/blink",
+                apiPath: "/api/actions/buy?asset=calicoatsenforcer|DgkAjeQvA1eJbq9YPvzCJojuKmNqBYYC7mcwDonCNYWz|790866|618",
+            },
         ],
     };
 
